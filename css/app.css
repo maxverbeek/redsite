@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400,600);
+
+html, body {
+	margin: 0;
+	min-height: 100%;
+	font-family: Dosis;
+	font-size: 1.1em;
+	color: rgba(0, 0, 0, .86);
+}
+
+.opening {
+	background-image: url(/img/screenshot_113539.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+	text-align: center;
+	position: relative;
+}
+
+.opening h1 {
+	font-weight: 300;
+	float: left;
+	margin-top: 3em;
+	margin-bottom: 0.3em;
+	text-align: center;
+	width: 100%;
+	font-size: 4em;
+	color: white;
+}
+
+.opening h2 {
+	text-align: center;
+	color: white;
+	width: 100%;
+	margin-top: 0;
+}
+
+@keyframes breathescale {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.6); }
+	100% { transform: scale(1); }
+}
+
+.opening .button {
+	display: inline-block;
+	color: white;
+	width: 135px;
+	line-height: 66px;
+	height: 50px;
+	border: 2px solid white;
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+	transition-timing-function: ease-in-out;
+	outline: none;
+}
+
+.opening .button:hover {
+	border-color: #e53935;
+	color: #e53935;
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, .45);
+}
+
+.opening .button i {
+	font-size: 32px;
+	animation-timing-function: ease-in-out;
+	animation: breathescale;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.about {
+	padding-top: 50px; /* for menu */
+}
+
+.menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.menu ul {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 15px 0 0;
+	margin-right: 15px;
+}
+
+.menu ul li {
+	float: left;
+	padding: 0 20px;
+	list-style-type: none;
+}
+
+.menu ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.05em;
+}
+
+.menu-background {
+	position: fixed;
+	width: 100%;
+	background: rgba(98, 2, 2, .80);
+	height: 50px;
+}
+
+.container a {
+	color: #e53935;
+	text-decoration: none;
+	transition: transform .5s;
+}
+
+@keyframes makebiglol {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+	100% { transform: scale(1); }
+}
+
+.container a:hover {
+	display: inline-block;
+	animation: makebiglol .5s ease-in-out;
+}
+
+.memberlist span {
+	display: block;
+	line-height: 24px;
+	margin: 5px 5px 5px 0;
+}
+
+.memberlist span.clanname {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.memberlist span.nickname::before, .memberlist span.location::before, .memberlist span.rank::before {
+	font-family: 'Material Icons';
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	direction: ltr;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+
+	text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+.memberlist span.nickname::before {
+	content: "person";
+}
+
+.memberlist span.location::before {
+	content: "location_on";
+}
+
+.memberlist span.rank::before {
+	content: "favorite";
+}
+
+.memberlist .row {
+	margin-bottom: 30px;
+}
