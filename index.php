@@ -28,7 +28,7 @@
         <div class="row opening">
             <h1>Home of the RED|Clan</h1>
             <h2>RED like the blood of our enemies</h2>
-            <a class="button" href="#" onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'}); return false;"><i class="material-icons">expand_more</i></a>
+            <a class="button" href="#" onclick="window.scroll({top: window.innerHeight, behavior: 'smooth'}); return false;"><i class="material-icons">expand_more</i></a>
         </div>
         <section class="container about">
             <div class="row">
