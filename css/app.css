@@ -6,6 +6,7 @@ html, body {
 	font-family: Dosis;
 	font-size: 1.1em;
 	color: rgba(0, 0, 0, .86);
+	scroll-behavior: smooth;
 }
 
 .opening {
@@ -73,7 +74,7 @@ html, body {
 	animation-iteration-count: infinite;
 }
 
-.about {
+section.container:first-of-type {
 	padding-top: 50px; /* for menu */
 }
 
@@ -171,4 +172,10 @@ html, body {
 
 .memberlist .row {
 	margin-bottom: 30px;
+}
+
+.article-meta {
+	font-size: 18px;
+	font-style: italic;
+	color: rgba(0, 0, 0, .51);
 }

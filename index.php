@@ -1,3 +1,6 @@
+<?php
+require 'app/init.php';
+?>
 <!doctype html>
 <html lang="en_UK">
     <head>
@@ -12,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
+        <!-- Miscellaneous CSS -->
         <link rel="stylesheet" type="text/css" href="/css/app.css">
         <link rel="stylesheet" type="text/css" href="/css/materialize-grid.min.css">
     </head>
@@ -20,7 +24,7 @@
         <div class="menu">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#todo">What's going on</a></li>
+                <li><a href="/sup.php">What's going on</a></li>
                 <li><a href="#protec">Namefaking</a></li>
             </ul>
         </div>

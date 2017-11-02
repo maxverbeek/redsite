@@ -1,0 +1,9 @@
+{
+    "require": {
+        "erusev/parsedown": "^1.6"
+    },
+
+    "autoload": {
+    	"classmap": ["src/"]
+    }
+}
